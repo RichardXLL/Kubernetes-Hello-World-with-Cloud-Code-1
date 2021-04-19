@@ -1,0 +1,589 @@
+2021-04-16 16:28:41,888 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2021-04-16 16:28:41,898 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'list']
+2021-04-16 16:28:41,903 DEBUG    root            Running [gcloud.services.list] with arguments: [--enabled: "True", --filter: "config.name=containerregistry.googleapis.com", --format: "json", --project: "cohesive-slate-308002", --quiet: "True"]
+2021-04-16 16:28:41,930 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/?recursive=true
+2021-04-16 16:28:41,933 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-16 16:28:41,938 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-16 16:28:41,939 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/token
+2021-04-16 16:28:41,942 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-16 16:28:41,945 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/token HTTP/1.1" 200 None
+2021-04-16 16:28:41,959 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/?recursive=true
+2021-04-16 16:28:41,962 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-16 16:28:41,965 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-16 16:28:41,967 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/token
+2021-04-16 16:28:41,969 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-16 16:28:41,972 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/token HTTP/1.1" 200 None
+2021-04-16 16:28:42,004 INFO     root            Display format: "
+          table(
+            config.name:label=NAME:sort=1,
+            config.title
+          )
+         json"
+2021-04-16 16:28:42,011 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2021-04-16 16:28:43,465 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/cohesive-slate-308002/services?alt=json&filter=state%3AENABLED HTTP/1.1" 200 None
+2021-04-16 16:28:43,816 INFO     ___FILE_ONLY___ [
+  {
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+    "config": {
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      "authentication": {},
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      "documentation": {
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+        "summary": "Google Container Registry provides secure, private Docker image storage on Google Cloud Platform.  Our API follows the Docker Registry API specification, so we are fully compatible with the Docker CLI client, as well as standard tooling using the Docker Registry API."
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      },
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      "features": [
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+        "googleprod.com/service/use-monarch"
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      "legacy": {
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+        "apiV1Name": "containerregistry.googleapis.com",
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+        "devconsole": {
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+          "learnmoreUrl": "https://cloud.google.com/container-registry/"
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+        }
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      },
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      "migration": {},
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+      "monitoredResources": [
+2021-04-16 16:28:43,817 INFO     ___FILE_ONLY___ 
+        {
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+          "labels": [
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/location"
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/uid"
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+              "key": "serviceruntime.googleapis.com/api_version"
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+              "key": "serviceruntime.googleapis.com/api_method"
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+              "key": "serviceruntime.googleapis.com/consumer_project"
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/project"
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/service"
+2021-04-16 16:28:43,818 INFO     ___FILE_ONLY___ 
+            }
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+          ],
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+          "monitoringMigration": {
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            "monitoringBackend": "CLOUD_MONARCH"
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+          },
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+          "type": "serviceruntime.googleapis.com/api"
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+        },
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+        {
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+          "labels": [
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/location"
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/uid"
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/service"
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/resource_id"
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,819 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/resource_node"
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/quota_metric"
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/quota_location"
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+            }
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+          ],
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+          "monitoringMigration": {
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+            "monitoringBackend": "CLOUD_MONARCH"
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+          },
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+          "type": "serviceruntime.googleapis.com/consumer_quota"
+2021-04-16 16:28:43,820 INFO     ___FILE_ONLY___ 
+        },
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+        {
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+          "labels": [
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/location"
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/uid"
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/service"
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/resource_id"
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,821 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/resource_node"
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/consumer_resource_node"
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/quota_metric"
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+            },
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+            {
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+              "key": "cloud.googleapis.com/quota_location"
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+            }
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+          ],
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+          "monitoringMigration": {
+2021-04-16 16:28:43,822 INFO     ___FILE_ONLY___ 
+            "monitoringBackend": "CLOUD_MONARCH"
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+          },
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+          "type": "serviceruntime.googleapis.com/producer_quota"
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+        }
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+      "monitoring": {
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+        "consumerDestinations": [
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+          {
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+            "metrics": [
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/quota_used_count",
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/api/consumer/quota_refund_count",
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/used",
+2021-04-16 16:28:43,823 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/limit",
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/exceeded",
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/allocation/consumer/quota_used_count"
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+            ],
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+            "monitoredResource": "serviceruntime.googleapis.com/api"
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+          },
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+          {
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+            "metrics": [
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/rate/consumer/used_count",
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/rate/consumer/refund_count",
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/allocation/consumer/usage",
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/consumer/limit",
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+              "serviceruntime.googleapis.com/quota/consumer/exceeded"
+2021-04-16 16:28:43,824 INFO     ___FILE_ONLY___ 
+            ],
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+            "monitoredResource": "serviceruntime.googleapis.com/consumer_quota"
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+          }
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+        ]
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+      },
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+      "name": "containerregistry.googleapis.com",
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+      "quota": {},
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+      "title": "Container Registry API",
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+      "usage": {
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+        "requirements": [
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+          "serviceusage.googleapis.com/tos/cloud",
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+          "serviceusage.googleapis.com/billing-enabled"
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+        ],
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+        "serviceAccess": "PUBLIC"
+2021-04-16 16:28:43,825 INFO     ___FILE_ONLY___ 
+      }
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+    },
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+    "dependencyConfig": {
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+      "dependsOn": [
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "containerregistry.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "pubsub.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "storage-api.googleapis.com"
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+      "directlyDependsOn": [
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "pubsub.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "storage-api.googleapis.com"
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+      "directlyRequiredBy": [
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "appengineflex.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "autopush-pod-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "autopush-qual-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "autopush-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "cloudbuild.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "container.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "containerscanning.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "dev-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "dev-pod-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,826 INFO     ___FILE_ONLY___ 
+        "dev-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "ondemandscanning.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "preprod-cloudfunctions.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "preprod-pod-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-appengineflex.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-cloudfunctions.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-container.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-containerscanning.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-ondemandscanning.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-pod-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-qual-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-run.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "staging-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "test-appengineflex.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "test-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,827 INFO     ___FILE_ONLY___ 
+        "test-cloudfunctions.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "test-container.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "test-run.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "visualinspection.googleapis.com"
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+      ],
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+      "requiredBy": [
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "anthos.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "appengineflex.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-anthos.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-clouddeploy.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-config.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-datafusion.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-datalogic.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-gkedataplanemanagement.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-krmapihosting.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-memcache.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-pod-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-qual-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-spinnaker.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autopush-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "autoscaler.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "binaryauthorization.googleapis.com",
+2021-04-16 16:28:43,828 INFO     ___FILE_ONLY___ 
+        "cloud-infrastructure.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "cloudbuild.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "clouddeploy.sandbox.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "composer.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "config.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "container.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "containerscanning.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "datafusion.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "datalogic.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "dev-anthos.sandbox.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "dev-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "dev-composer.sandbox.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "dev-pod-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "dev-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "file.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "gkedataplanemanagement.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "krmapihosting.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "managedvms.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "manager.googleapis.com",
+2021-04-16 16:28:43,829 INFO     ___FILE_ONLY___ 
+        "memcache.googleapis.com",
+2021-04-16 16:28:43,830 INFO     ___FILE_ONLY___ 
+        "ondemandscanning.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "preprod-cloudfunctions.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "preprod-pod-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "redis.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "sandbox-clouddeploy.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "sandbox-config.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "spinnaker.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "staging-anthos.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "staging-appengineflex.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "staging-binaryauthorization.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "staging-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "staging-clouddeploy.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "staging-cloudfunctions.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "staging-composer.sandbox.googleapis.com",
+2021-04-16 16:28:43,831 INFO     ___FILE_ONLY___ 
+        "staging-config.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-container.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-containerscanning.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-datafusion.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-datalogic.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-file.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-gkedataplanemanagement.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-krmapihosting.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-managedvms.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-memcache.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-ondemandscanning.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-pod-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-qual-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-redis.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-run.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-spinnaker.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-tpu.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "staging-visualinspection.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "test-appengineflex.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "test-binaryauthorization.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "test-cloudbuild.sandbox.googleapis.com",
+2021-04-16 16:28:43,832 INFO     ___FILE_ONLY___ 
+        "test-cloudfunctions.sandbox.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "test-container.sandbox.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "test-file.sandbox.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "test-managedvms.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "test-memcache.sandbox.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "test-redis.sandbox.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "test-run.sandbox.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "test-tpu.sandbox.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "tpu.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+        "visualinspection.googleapis.com"
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+      ]
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+    },
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+    "name": "projects/241244117096/services/containerregistry.googleapis.com",
+2021-04-16 16:28:43,833 INFO     ___FILE_ONLY___ 
+    "parent": "projects/241244117096",
+2021-04-16 16:28:43,834 INFO     ___FILE_ONLY___ 
+    "serviceAccounts": [
+2021-04-16 16:28:43,834 INFO     ___FILE_ONLY___ 
+      {
+2021-04-16 16:28:43,834 INFO     ___FILE_ONLY___ 
+        "email": "service-241244117096@containerregistry.iam.gserviceaccount.com",
+2021-04-16 16:28:43,834 INFO     ___FILE_ONLY___ 
+        "role": "roles/containerregistry.ServiceAgent"
+2021-04-16 16:28:43,834 INFO     ___FILE_ONLY___ 
+      }
+2021-04-16 16:28:43,834 INFO     ___FILE_ONLY___ 
+    ],
+2021-04-16 16:28:43,834 INFO     ___FILE_ONLY___ 
+    "state": "ENABLED"
+2021-04-16 16:28:43,834 INFO     ___FILE_ONLY___ 
+  }
+2021-04-16 16:28:43,879 INFO     ___FILE_ONLY___ 
+]
+
+2021-04-16 16:28:43,881 DEBUG    root            SDK update checks are disabled.

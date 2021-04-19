@@ -1,0 +1,23 @@
+2021-04-16 16:01:51,505 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2021-04-16 16:01:51,508 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'docker_helper']
+2021-04-16 16:01:51,511 DEBUG    root            Running [gcloud.auth.docker-helper] with arguments: [METHOD: "get"]
+2021-04-16 16:01:51,529 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/?recursive=true
+2021-04-16 16:01:51,533 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-16 16:01:51,537 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-16 16:01:51,538 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/token
+2021-04-16 16:01:51,540 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-16 16:01:51,544 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/token HTTP/1.1" 200 None
+2021-04-16 16:01:51,550 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/?recursive=true
+2021-04-16 16:01:51,553 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2021-04-16 16:01:51,556 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/?recursive=true HTTP/1.1" 200 None
+2021-04-16 16:01:51,557 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/token?scopes=%0Aemail%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fbigquery%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdevstorage.full_control%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fndev.cloudman%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.admin%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fprediction%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fprojecthosting%0A
+2021-04-16 16:01:51,561 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2021-04-16 16:01:51,565 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/senmioxl@gmail.com/token?scopes=%0Aemail%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fbigquery%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdevstorage.full_control%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fndev.cloudman%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.admin%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fprediction%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fprojecthosting%0A HTTP/1.1" 200 None
+2021-04-16 16:01:51,571 INFO     root            Display format: "json"
+2021-04-16 16:01:51,640 INFO     ___FILE_ONLY___ {
+  "Secret": "ya29.a0AfH6SMAnfQQL0sogCDbAhFr50RljJW7IXxTzpDbwWcgGjTW14d-G2AFtyT5xr2orrjui9ait1pnvfA1BmEkwuf9givNxUfgHQy3_T7VeaMaIewplhs0q_3THXdug9umujrYuO30eXJvRnoFbdX7m0KqCC9qQgNY0ccmtPWN2Eqwv8l82YrU4dAbZ71RA9mVMsYv6GXKORJKtVyu1lT7TF2toXWkH7WPHqFJaDnSf12bX4SFLiquOEx7VJFXwTp4XvmvZSP0",
+  "Username": "_dcgcloud_token"
+}
+2021-04-16 16:01:51,640 INFO     ___FILE_ONLY___ 
+
+2021-04-16 16:01:51,640 DEBUG    root            SDK update checks are disabled.
