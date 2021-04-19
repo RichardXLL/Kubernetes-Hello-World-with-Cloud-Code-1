@@ -13,13 +13,14 @@
 # limitations under the License.
 
 [START cloudbuild_quickstart_build]
-steps:
-#- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1', '.' ]
-images:
-- 'us-central1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
-# [END cloudbuild_quickstart_build]
 
-docker build \
-    -t gcr.io/braided-voyage-308002/github.com/richardxll/kubernetes-hello-world-with-cloud-code-1:$COMMIT_SHA \
-    
+steps:
+- name: node:10.15.1
+  entrypoint: npm
+  args: ["install"]
+- name: node:10.15.1
+  entrypoint: npm
+  args: ["run", "build"]
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"
