@@ -19,3 +19,7 @@ steps:
 images:
 - 'us-central1-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
 # [END cloudbuild_quickstart_build]
+
+docker build \
+    -t gcr.io/braided-voyage-308002/github.com/richardxll/kubernetes-hello-world-with-cloud-code-1:$COMMIT_SHA \
+    
