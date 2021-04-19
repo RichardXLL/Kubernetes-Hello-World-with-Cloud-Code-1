@@ -30,3 +30,8 @@ WORKDIR /hello-world
 COPY --from=build /app .
 COPY template ./template
 ENTRYPOINT ["./app"]
+
+FROM alpine
+COPY quickstart.sh /
+CMD ["/quickstart.sh"]
+# [END cloudbuild_quickstart_build_dockerfile]
